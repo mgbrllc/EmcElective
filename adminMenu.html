@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Menu</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .button-container button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Employee Usernames and Passwords</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Sample data, replace with actual data from your database -->
+      <tr>
+        <td>employee1</td>
+        <td>password1</td>
+        <td>
+          <button onclick="editEmployee('employee1')">Edit</button>
+          <button onclick="deleteEmployee('employee1')">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>employee2</td>
+        <td>password2</td>
+        <td>
+          <button onclick="editEmployee('employee2')">Edit</button>
+          <button onclick="deleteEmployee('employee2')">Delete</button>
+        </td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+  
+  <div class="button-container">
+    <button onclick="addEmployee()">Add Employee</button>
+    <!-- Add more buttons for other actions -->
+  </div>
+
+  <script>
+    function editEmployee(username) {
+      // Implement edit functionality
+      console.log(`Editing employee: ${username}`);
+    }
+
+    function deleteEmployee(username) {
+      // Implement delete functionality
+      console.log(`Deleting employee: ${username}`);
+    }
+
+    function addEmployee() {
+      // Implement add functionality
+      console.log('Adding new employee');
+    }
+  </script>
+</body>
+</html>
